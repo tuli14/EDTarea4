@@ -8,8 +8,16 @@
 package Cuentas;
 
 
+/**
+ *
+ * @author Alba Ruiz Guillén
+ */
 public class Main {
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         CCuenta Cuenta1;
         double saldoActual;
@@ -21,6 +29,11 @@ public class Main {
         operativa_cuenta(Cuenta1, 200);
     }
 
+    /**
+     * Método para realizar ingresos y retirada de dinero en la cuenta
+     * @param Cuenta1 Objeto correspondiente a la clase CCuenta
+     * @param cantidad Cantidad de dinero que se quiere ingresar o retirar
+     */
     public static void operativa_cuenta(CCuenta Cuenta1, float cantidad) {
         try {
             Cuenta1.retirar(cantidad);
